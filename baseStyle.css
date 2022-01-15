@@ -7,7 +7,10 @@
     display: flex;
     flex: 1 1 auto;
 }
+.square{
+    background-color: lightblue;
+}
+.square.selected{
+    background-color: blue;
 
-/* .square{
-    width: 20vw;
-} */
+}

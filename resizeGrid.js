@@ -1,12 +1,9 @@
 
+
 function resizeSquareClass() {
     let squareSide = getSquareSize() * 0.95;
     var style = document.createElement('style');
-    style.innerHTML =
-        `.square {
-		width: ${squareSide}px;
-		height: ${squareSide}px;
-	}`;
+    style.innerHTML =squareCss(squareSide);
 
     // Get the first script tag
     var ref = document.querySelector('script');

@@ -1,6 +1,8 @@
-function clearPage()  {
-    const myNode = document.querySelector("body");
-    while (myNode.firstChild) {
-      myNode.removeChild(myNode.lastChild);
+function clearContainer()  {
+    const myNode = [...document.querySelectorAll("#container")];
+    myNode.forEach(node =>{
+    while (node.firstChild) {
+      node.removeChild(node.lastChild);
     }
+  });
 };

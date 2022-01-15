@@ -1,7 +1,7 @@
 
 
 function createGrid(numRows, numCols) {
-    let containerElement = document.getElementById('container');
+    let containerElement = document.getElementById('.container');
     if (!containerElement) containerElement= createEmpyContainer();
     let rowsSeq = createArrSeq(numRows);
     let colsSeq = createArrSeq(numCols);
@@ -18,7 +18,7 @@ function createRow(containerElement, num) {
     let rowDivEl = document.createElement('div');
     rowDivEl.setAttribute('id', num);
     rowDivEl.setAttribute('class', 'row');
-    rowDivEl.innerText = "R" + num;
+    //rowDivEl.innerText = "R" + num;
     containerElement.appendChild(rowDivEl);
     return rowDivEl;
 }
@@ -27,7 +27,7 @@ function createSquare(rowEl, idForSq) {
     let sqDivEl = document.createElement('div');
     sqDivEl.setAttribute('id', idForSq);
     sqDivEl.setAttribute('class', 'square');
-    sqDivEl.innerText = "" + idForSq;
+    //sqDivEl.innerText = "" + idForSq;
     rowEl.appendChild(sqDivEl);
 }
 
