@@ -8,8 +8,6 @@
     flex: 1 1 auto;
 }
 
-.row:after {
-    content: '';
-    display: block;
-    padding-top: 100%;
-}
+/* .square{
+    width: 20vw;
+} */

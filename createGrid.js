@@ -10,13 +10,15 @@ function createGrid(numRows, numCols) {
         return acc.concat(createdRow);
     }, [])
     rowsArr.forEach(rowEl => createAllSquareForRow(rowEl, colsSeq));
+    resizeSquareClass();
+    return ({numRows,numCols});
 }
 function createArrSeq(numOfEls) { return [...Array(numOfEls).keys()] };
 function createRow(containerElement, num) {
     let rowDivEl = document.createElement('div');
     rowDivEl.setAttribute('id', num);
     rowDivEl.setAttribute('class', 'row');
-    rowDivEl.innerText = "Row " + num;
+    rowDivEl.innerText = "R" + num;
     containerElement.appendChild(rowDivEl);
     return rowDivEl;
 }
@@ -25,7 +27,7 @@ function createSquare(rowEl, idForSq) {
     let sqDivEl = document.createElement('div');
     sqDivEl.setAttribute('id', idForSq);
     sqDivEl.setAttribute('class', 'square');
-    sqDivEl.innerText = "Square " + idForSq;
+    sqDivEl.innerText = "" + idForSq;
     rowEl.appendChild(sqDivEl);
 }
 

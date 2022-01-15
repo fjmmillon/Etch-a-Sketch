@@ -4,5 +4,3 @@ function clearPage()  {
       myNode.removeChild(myNode.lastChild);
     }
 };
-clearPage();
-createGrid(5,5);
